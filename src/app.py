@@ -14,6 +14,8 @@ def index():
     return render_template("index.html", counter=counter)
 
 @app.route("/submit", methods=["POST"])
+# lomakkeen lähetä-nappi vie .../submit sivulle, josta sovellus hakee tiedot
+# ja työntää ne tietokantaan ja lopuksi palauttaa sivuston aloitussivulle
 def submit_data():
     key = request.form.get("key")
     author = request.form.get("author")
