@@ -1,3 +1,17 @@
-<h1>Käynnistysivu</h1>
+{% extends "layout.html" %}
 
-<p>Olet onnistunut {{ counter }} kertaa avaamaan sivun.</p>
+{% block title %}Lähdeviiteohjelma{% endblock %}
+{% block body %}
+
+<h2>Lähdeviiteohjelma</h2>
+
+<form action="/submit" method="post">
+    <p><input type="text" name="koodi" placeholder="koodi"></p>
+    <p><input type="text" name="kirjoittaja" placeholder="kirjoittaja"></p>
+    <p><input type="text" name="otsikko" placeholder="otsikko"></p>
+    <p><input type="text" name="julkaisu" placeholder="julkaisu"></p>
+    <p><input type="text" name="vuosi" placeholder="vuosi"></p>
+    <p><button type="submit">lähetä</button></p>
+</form>
+
+{% endblock %}
