@@ -1,7 +1,9 @@
 from flask import render_template, request, redirect  # , jsonify, flash
+
 # from db_helper import reset_db
 # from repositories.todo_repository import get_todos, create_todo, set_done
 from config import app  # , test_env
+
 # from util import validate_todo
 from repositories.reference_repository import create_reference
 
@@ -27,6 +29,7 @@ def submit_data():
 
     create_reference(key, author, title, journal, year)
     return redirect("/")
+
 
 # @app.route("/new_todo")
 # def new():
