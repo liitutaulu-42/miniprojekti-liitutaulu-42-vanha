@@ -17,6 +17,7 @@ Komentorivillä tässä hakemistossa:
 - vaaditut ominaisuudet on toteutettu ja testattu toimiviksi
 - ohjelma on asennettavissa ohjeiden avulla
 - dokumentaatio on riittävää (README:ssä on ohjeet, linkit backlogiin ja GHA workflowiin)
+- testaan tällä rivillä, mitä tapahtuu
 
 # Muuta tietoa
 
